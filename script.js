@@ -89,10 +89,9 @@ class star {
 		ellipse(this.x, this.y, scale, scale);
 	}
 	down(){
-		this.y = this.y + .1;
-
+	this.y = this.y + .1;
 	this.x = this.x + .1;
-
+	
 	}
 }
 function starBtn() {
