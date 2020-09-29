@@ -10,20 +10,31 @@ body{
 
 
 hr {
-  border-top: 1px solid #81E9E7;
-  width:10%;
+	border-top: 1px solid #81E9E7;
+	width:10%;
+	float:center;
 }
-
+html {
+	scroll-behavior: smooth;
+}
 
 .navbar {
-   background-color: transparent;
-   background: transparent;
-   border-color: transparent;
+	background-color: transparent;
+	background: transparent;
+	border-color: transparent;
 }
 
 
-
-
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 16px;
+	text-align: center;
+	background-color: #f1f1f1;
+}
+.card-title{
+	color:#000023;
+	font-weight:bold;
+}
 #main{
 	width:100%;
 	backdrop-filter:brightness(1.5);
