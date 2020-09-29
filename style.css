@@ -9,6 +9,9 @@ body{
 }
 
 
+hr {
+  border-top: 1px solid #81E9E7;
+}
 
 
 .navbar {
@@ -46,17 +49,21 @@ body{
 .col{
 	transition: 1s;
 	margin:0px;
+	text-align:center;
 }
-.col:hover{
+#subMain .col:hover{
 	color:#81E9E7;
 }
-.col:hover .large{
+#subMain .col:hover .large{
 	color:white;
 }
 
 
 
-
+#date span{
+	font-size:150%;
+	color:#81E9E7;
+}
 
 
 #stars{
@@ -70,8 +77,10 @@ body{
 }
 
 
-.large{
+.large, .sectionTitle{
+	font-weight:normal;
 	transition: 1s;
 	font-size:150%;
 	color:#81E9E7;
 }
+
