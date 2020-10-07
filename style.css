@@ -1,115 +1,207 @@
 body{
-	margin:0px;
-	padding:0px;
-	border:0px;
-	background:#1f2833;
-	color:white;
-	overflow-x: hidden;
-	font-family: 'Lato', sans-serif;
+	margin-top:130px;
+	font-family: 'Alice', serif;
 }
 
-
-hr {
-	border-top: 1px solid #81E9E7;
-	width:10%;
-	float:center;
+a{
+	color:#FF00A2;
 }
-html {
-	scroll-behavior: smooth;
-}
-
-.navbar {
-	background-color: transparent;
-	background: transparent;
-	border-color: transparent;
-}
-
-
-.card {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	padding: 16px;
-	text-align: center;
-	background-color: #f1f1f1;
-}
-.card-title{
-	color:#000023;
+a:hover{
+	color:#FF00A2;
 	font-weight:bold;
+	text-decoration:none;
 }
-#main{
+
+.logo{
+	border-radius:100px;
+	background:#fff;
+	margin-right:10px;
+}
+
+.fixed-top{
+	transition:1s;
+}
+
+#welcome-message{
+	 opacity: 0;
+	 transition:4s;
+}
+
+header {
+	position: relative;
+	background-color: pink;
+	height: 75vh;
+	min-height: 40rem;
+	width: 100%;
+	overflow: hidden;
+}
+
+header video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+	position: relative;
+	z-index: 2;
+}
+
+header .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(to right, #FF00A2 , white);
+	opacity:.4;
+	z-index: 1;
+}
+
+
+
+header .text-white{
+	color:white;
+}
+
+@media (pointer: coarse) and (hover: none) {
+	header {
+	background: url('img/video.mp4') black no-repeat center center scroll;
+	}
+	header video {
+	display: none;
+	}
+}
+#services{
+background: linear-gradient(0deg, rgba(255,124,207,1) 0%, rgba(255,255,255,1) 100%);
+}
+#services1{
 	width:100%;
-	backdrop-filter:brightness(1.5);
-	background: url(img/background3.jpg) no-repeat center center fixed; 
+	background: url(img/bakery.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
+	padding-top:20px;
+	padding-bottom:20px;
 }
-#main .container{
-	padding:170px 0px 50px;
-}
-#main2{
-	width:100%;
-	background: url(img/learning4.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-}
-#main2 .container{
+#services1 .container{
 	padding-top:50px;
 	padding-bottom:50px;
-	background: rgba(31, 40, 51,.6);
+	background: rgba(255, 0, 162, 0.3);
+	
+	
+}
+#services2{
+	padding-top:20px;
+	padding-bottom:20px;
 }
 
-
-#subMain{
-	padding: 10px 0px 0px 0px;
-	background: rgba(31, 40, 51,.3);
-	color:white;
-	text-align:center;	
-}
-
-
-
-.col{
-	transition: 1s;
-	margin:0px;
-	text-align:center;
-}
-#subMain .col:hover{
-	color:#81E9E7;
-}
-#subMain .col:hover .large{
-	color:white;
-}
-
-
-
-#date span{
-	font-size:150%;
-	color:#81E9E7;
-}
-
-
-#stars{
+#contact{
 	width:100%;
-	height:500px;
+	background: url(img/cake.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+		padding-top:20px;
+	padding-bottom:20px;
+}
+#contact .container{
+	padding-top:50px;
+	padding-bottom:50px;
+	background: rgba(255, 0, 162, 0.3);
+	
+}
+#contact button{
+	background-color: rgba(0,0,0,0.5);
+	font-size:300%;
+	color:#FFF;
+
+}
+#contact a{
+	font-size:300%;
+	color:#FFF;
+	font-family: 'Sacramento', cursive;
+
+}
+#contact a:hover{
+	font-weight:bold;
+	text-decoration:none;
+}
+.form-styling{
+	background-color: rgba(255,0,162,0.08);
+	border:solid 2px #fff;
+	color:#FFF;
+}
+.form-styling{
+	font-weight:bold;
+	border-radius:0px;
+	
 }
 
 
-.fas{
+
+
+
+.footer{
+	padding-top:30px;
+	padding-bottom:30px;
+	background-color:#243533;
+	color:#FFF;
+}
+.footer-sm p{
+	font-size:280%;
+	transition:1s;
+}
+.footer-sm a{
+	color:#FFF;
+
+}
+.footer-sm a:hover{
+	color:#FF00A2;
+}
+
+.pink-background{
+	background-color:#FF00A2;
+}
+.pink-background a{
+	color:#fff;
+}
+.pink-background a:hover{
+	font-weight:bold;
+}
+.pink-background .dropdown-item{
+	color:black;
+}
+.pink-color{
+	color:#FF00A2;
+}
+.fancy-font{
+	font-family: 'Sacramento', cursive;
+}
+
+.card-title{
+	color:#FF00A2;
+	font-family: 'Sacramento', cursive;
 	font-size:200%;
 }
-
-
-.large, .sectionTitle{
-	font-weight:normal;
-	transition: 1s;
-	font-size:150%;
-	color:#81E9E7;
+.button-style{
+	background-color: rgba(0,0,0,0);
+	border: solid 2px #FF00A2;
+	color:#FF00A2;
+	padding:10px;
 }
-
-.tab{
-	text-indent: 50px;
-}
-.card{
-	color:#111;
-}
+.button-style:hover{
+	background-color: #FF00A2;
+	color:white;
+	text-decoration:none;
+	transition:.5;
+}0

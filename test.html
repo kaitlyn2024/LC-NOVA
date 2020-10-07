@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+		<style>
+		header {
+		  position: relative;
+		  background-color: pink;
+		  height: 75vh;
+		  min-height: 25rem;
+		  width: 100%;
+		  overflow: hidden;
+		}
+
+		header video {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  min-width: 100%;
+		  min-height: 100%;
+		  width: auto;
+		  height: auto;
+		  z-index: 0;
+		  -ms-transform: translateX(-50%) translateY(-50%);
+		  -moz-transform: translateX(-50%) translateY(-50%);
+		  -webkit-transform: translateX(-50%) translateY(-50%);
+		  transform: translateX(-50%) translateY(-50%);
+		}
+
+		header .container {
+		  position: relative;
+		  z-index: 2;
+		}
+
+		header .overlay {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  height: 100%;
+		  width: 100%;
+		  background-color: #FF00A2;
+		  opacity:.3;
+		  z-index: 1;
+		}
+		
+		
+		header .text-white{
+			color:white;
+		}
+		
+		@media (pointer: coarse) and (hover: none) {
+		  header {
+			background: url('img/video.mp4') black no-repeat center center scroll;
+		  }
+		  header video {
+			display: none;
+		  }
+		}
+
+		</style>
+		<!--Title & Icon-->
+		<title>Daisy’s Amazing Cakes</title>
+		<link rel="icon" href="img/logo.jpg">
+	</head>
+	<body>
+		<header>
+		  <div class="overlay"></div>
+		  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+			<source src="img/video.mp4" type="video/mp4">
+		  </video>
+		  <div class="container h-100">
+				<div class="row align-items-center h-100">
+					<div class="col-6 mx-auto text-white ">
+					<center>
+						
+						<h1 class="display-3">Video Header</h1>
+						<p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
+					</center>
+					</div>
+					<div class="col-6 mx-auto text-white ">
+						<form>
+							<div class="form-group">
+								<label for="name">Name</label>
+								<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							</div>		 
+							 <div class="form-group">
+								<label for="e">Email Address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							</div>
+							 <div class="form-group">
+								<label for="service">Service</label>
+								<select class="form-control">
+									<option>Custom Cakes</option>
+									<option>Table Decoration</option>
+									<option>Baloons</option>
+									<option>Events</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="message">Message</label>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</header>
+
+
+		<!--Footer-->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	</body>
+</html>
