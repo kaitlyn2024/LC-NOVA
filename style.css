@@ -38,7 +38,7 @@ html {
 #main{
 	width:100%;
 	backdrop-filter:brightness(1.5);
-	background: url(img/background.mp4) no-repeat center center fixed; 
+	background: url(img/background3.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
